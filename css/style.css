@@ -95,6 +95,7 @@ a{
     box-shadow: var(--box-shadow-dep) !important;
     padding: 7px !important;
     min-height: var(--min-hight-card);
+        min-width: fit-content !important;
 }
 
 .card,
