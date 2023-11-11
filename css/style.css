@@ -1,0 +1,122 @@
+:root {
+    /***************  root settings  **************/
+    /* background */
+    --bg-header: #dcd7d7; /* background navbar*/
+    --bg-body: #ffffff; /* background body */
+    --bg-card: #ffffff; /* background card */
+    --bg-main: #4fb3b4; /* background main color for section */
+    --bg-sub: #f6f7fb; /* transparent secondary background*/
+    --bg-btn-primary: transparent; /* background btn primary*/
+    --bg-btn-dark: #3d3d3db2; /* background btn dark*/
+    --bg-btn-secondary: transparent; /* background btn secondary*/
+    /* colors */
+    --color-white: #ffffff; /* color white for text*/
+    --color-black: #222; /* color black for text*/
+    --color-dark: #3e3e3e; /* color dark for text*/
+    --color-primary: transparent; /* color primary */
+    --color-secondary: transparent; /* color secondary */
+    /* box shadow  */
+    --box-shadow-dep: inset 1px -3px 10px #989898,inset 5px -5px 10px #ffffff; /* box shadow for deportment*/
+    --box-shadow-btn: 0px 0px 8px var(--color-dark) ; /* box shadow for button*/
+    /* size card  */
+    --width-card: 220px; /* width card deportment  */
+    --hight-card: auto-fit; /* hight card deportment  */
+    --min-hight-card: 215px; /* hight card deportment  */
+    --width-dr-content:180px;  /* width dropdown content*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+a{
+    text-decoration-line: none !important;
+}
+
+#media{
+    font-size: 24px;
+}
+
+.image-container {
+    position: relative;
+    height: 420px;
+}
+.header-img{
+    height: 420px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(112, 184, 184,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes borders {
+    0% {
+        border-bottom: #4fb3b4 solid 5px;
+    }
+    25% {
+        border-bottom: #4fb3b4 solid 5px;
+        border-right: #4fb3b4 solid 5px;
+    }
+    50% {
+        border-bottom: #4fb3b4 solid 5px;
+        border-right: #4fb3b4 solid 5px;
+        border-left: #4fb3b4 solid 5px;
+    }
+    75% {
+        border-bottom: #4fb3b4 solid 5px;
+        border-right: #4fb3b4 solid 5px;
+        border-left: #4fb3b4 solid 5px;
+        border-top: #4fb3b4 solid 5px;
+    }
+    100% {
+        border: #4fb3b4 solid 5px;
+    }
+}
+
+.department {
+    width: var(--width-card) !important;
+    height: var(--hight-card) !important;
+    background-color: var(--bg-card) !important;
+    box-shadow: var(--box-shadow-dep) !important;
+    padding: 7px !important;
+    min-height: var(--min-hight-card);
+}
+
+.card,
+.department {
+    border: transparent solid 5px;
+    transition: all 3s ease;
+}
+
+.card:hover,
+.department:hover {
+    animation: borders 2s ease ; 
+}
+
+
+.department img{
+    width: 85px !important;
+    height: 85px !important;
+    object-fit: cover !important;
+}
+.department.health-sciences img{
+    width: auto !important;
+    height: 125px !important;
+    object-fit: cover !important;
+}
+
