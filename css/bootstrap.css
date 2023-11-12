@@ -43,7 +43,7 @@
   --bs-sub-text: #4d4d4d;
   --bs-sub-dark: #273238;
   --bs-inside-dark: #525b60;
-  --bs-box-shadow-card: inset 1px -3px 10px #989898,inset 5px -5px 10px #ffffff;
+  --bs-box-shadow-card: 0px 3px 3px #c3c3c3,0px 0px 3px #fdfdfd;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -7393,8 +7393,6 @@ textarea.form-control-lg {
 }
 
 .card-box-shadow{
-  border-radius: 25px !important;
-  padding: 7px !important;
   box-shadow: var(--bs-box-shadow-card) !important;
 }
 

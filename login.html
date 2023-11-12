@@ -35,43 +35,44 @@
             <div class="image-container w-100">
                 <img src="icons/college_3.jpg" alt="" class="w-100 header-img">
                 <div class="overlay">
-                    <div class="text-white fs-1 fw-bold text-center">courses</div>
+                    <div class="text-white fs-1 fw-bold text-center text-capitalize">courses</div>
                 </div>
             </div>
         </header>
     </div>    
         
-    <!-- body -->
-    <div class="container p-5">
-        <div class="d-flex justify-content-around flex-wrap gap-5">
-            <!-- course 1 -->
-            <div class=" mb-3 text-center">
-                <div class="department card-box-shadow ">
-                    <a href="login.html" class="text-primary-subtle">
-                        <img src="icons/programming-course.svg" alt="courses" class="card-img-top">
-                        <p class="fs-3 fw-bolder btn-link text-decoration-none">course 1</pc>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
-                    </a>
+    <div class="container-fluid p-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-10 mt-lg-0 mt-4 ">
+                <div class="conditions h-100 d-flex flex-column justify-content-center align-items-md-start align-items-center text-primary-subtle">
+                    <h2 class="mb-4">Registration Conditions</h2>
+                    <p>Condition 1: Your condition description goes here.</p>
+                    <p>Condition 2: Your condition description goes here.</p>
+                    <p>Condition 3: Your condition description goes here.</p>
                 </div>
             </div>
-            <!-- course 2 -->
-            <div class=" mb-3 text-center">
-                <div class="department card-box-shadow ">
-                    <a href="login.html" class="text-primary-subtle">
-                        <img src="icons/programming-course.svg" alt="courses" class="card-img-top">
-                        <p class="fs-3 fw-bolder btn-link text-decoration-none">course 2</pc>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
-                    </a>
-                </div>
-            </div>
-            <!-- course 3 -->
-            <div class="mb-3 text-center">
-                <div class="department card-box-shadow ">
-                    <a href="login.html" class="text-primary-subtle">
-                        <img src="icons/programming-course.svg" alt="courses" class="card-img-top">
-                        <p class="fs-3 fw-bolder btn-link text-decoration-none">course 2</pc>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
-                    </a>
+            <div class="col-lg-5 col-md-10" id="border-form">
+                <div class="form-container p-5 text-primary-subtle">
+                    <h2 class="text-center mb-4">Login Form</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Subscribe to our newsletter</label>
+                        </div>
+                        <button type="submit" class="btn bg-primary-subtle w-100">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

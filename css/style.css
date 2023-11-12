@@ -16,7 +16,7 @@
     --color-primary: transparent; /* color primary */
     --color-secondary: transparent; /* color secondary */
     /* box shadow  */
-    --box-shadow-dep: inset 1px -3px 10px #989898,inset 5px -5px 10px #ffffff; /* box shadow for deportment*/
+    --box-shadow-dep:  1px 1px 18px #c3c3c3,-1px -1px 18px #fdfdfd; /* box shadow for deportment*/
     --box-shadow-btn: 0px 0px 8px var(--color-dark) ; /* box shadow for button*/
     /* size card  */
     --width-card: 220px; /* width card deportment  */
@@ -92,10 +92,9 @@ a{
     width: var(--width-card) !important;
     height: var(--hight-card) !important;
     background-color: var(--bg-card) !important;
-    box-shadow: var(--box-shadow-dep) !important;
     padding: 7px !important;
     min-height: var(--min-hight-card);
-        min-width: fit-content !important;
+    min-width: fit-content !important;
 }
 
 .card,
@@ -111,13 +110,17 @@ a{
 
 
 .department img{
-    width: 85px !important;
-    height: 85px !important;
-    object-fit: cover !important;
-}
-.department.health-sciences img{
     width: auto !important;
     height: 125px !important;
     object-fit: cover !important;
 }
 
+#border-form{
+    border-left: #4fb3b4 2px solid;
+}
+@media (max-width: 995px) {
+    #border-form{
+        border-top: #4fb3b4 2px solid;
+        border-left:none;
+    }
+}
