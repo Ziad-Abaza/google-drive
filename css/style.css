@@ -13,7 +13,7 @@
     --color-white: #ffffff; /* color white for text*/
     --color-black: #222; /* color black for text*/
     --color-dark: #3e3e3e; /* color dark for text*/
-    --color-primary: transparent; /* color primary */
+    --color-primary: #4d4d4d; /* color primary */
     --color-secondary: transparent; /* color secondary */
     /* box shadow  */
     --box-shadow-dep:  1px 1px 18px #c3c3c3,-1px -1px 18px #fdfdfd; /* box shadow for deportment*/
@@ -24,70 +24,80 @@
     --min-hight-card: 215px; /* hight card deportment  */
     --width-dr-content:180px;  /* width dropdown content*/
 }
-
-*{
+/* Reset styles for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
 
-body{
+/* Set the font family for the entire body */
+body {
     font-family: 'Times New Roman', Times, serif !important;
 }
 
-a{
+/* Remove text decoration from all anchor elements */
+a {
     text-decoration-line: none !important;
 }
 
-#media{
+/* Define styles for social media icons with the id 'media' */
+#media {
     font-size: 24px;
 }
 
+/* Styling for the header image container */
 .image-container {
     position: relative;
     height: 420px;
 }
-.header-img{
+
+/* Styling for the header image */
+.header-img {
     height: 420px;
 }
 
+/* Overlay styles for the header image */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(112, 184, 184,0.7);
+    background-color: rgb(112, 184, 184, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Animation for borders */
 @keyframes borders {
+    /* Keyframes for different border styles */
     0% {
-        border-bottom: #4fb3b4 solid 5px;
+        border-bottom: var(--bg-main) solid 2px;
     }
     25% {
-        border-bottom: #4fb3b4 solid 5px;
-        border-right: #4fb3b4 solid 5px;
+        border-bottom: var(--bg-main) solid 2px;
+        border-right: var(--bg-main) solid 2px;
     }
     50% {
-        border-bottom: #4fb3b4 solid 5px;
-        border-right: #4fb3b4 solid 5px;
-        border-left: #4fb3b4 solid 5px;
+        border-bottom: var(--bg-main) solid 2px;
+        border-right: var(--bg-main) solid 2px;
+        border-left: var(--bg-main) solid 2px;
     }
     75% {
-        border-bottom: #4fb3b4 solid 5px;
-        border-right: #4fb3b4 solid 5px;
-        border-left: #4fb3b4 solid 5px;
-        border-top: #4fb3b4 solid 5px;
+        border-bottom: var(--bg-main) solid 2px;
+        border-right: var(--bg-main) solid 2px;
+        border-left: var(--bg-main) solid 2px;
+        border-top: var(--bg-main) solid 2px;
     }
     100% {
-        border: #4fb3b4 solid 5px;
+        border: var(--bg-main) solid 2px;
     }
 }
 
+/* Styles for department cards */
 .department {
     width: var(--width-card) !important;
     height: var(--hight-card) !important;
@@ -97,30 +107,118 @@ a{
     min-width: fit-content !important;
 }
 
+/* Styles for the Subscribe button */
+.btn-Subscribe {
+    /* Styles for the button and its animation */
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: var(--color-white);
+    padding: 0.3em 0.5em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: transparent;
+    border: 1px solid var(--bg-main);
+}
+
+/* Hover state for the Subscribe button */
+.btn-Subscribe:hover {
+    color: var(--color-white);
+    border: 1px solid var(--bg-main);
+}
+
+/* Animation for the Subscribe button:before */
+.btn-Subscribe:before {
+    /* Styles for the button:before element and its animation */
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+/* Animation for the Subscribe button:after */
+.btn-Subscribe:after {
+    /* Styles for the button:after element and its animation */
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: var(--bg-main);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+/* Hover state for the Subscribe button:before */
+.btn-Subscribe:hover:before {
+    top: -35%;
+    background-color: var(--bg-main);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* Hover state for the Subscribe button:after */
+.btn-Subscribe:hover:after {
+    top: -45%;
+    background-color: var(--bg-main);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* Styling for cards and departments with borders and hover animation */
 .card,
 .department {
-    border: transparent solid 5px;
+    border: var(--color-primary) solid 2px;
     transition: all 3s ease;
 }
 
+/* Hover state for cards and departments with animation */
 .card:hover,
 .department:hover {
-    animation: borders 2s ease ; 
+    animation: borders 2s ease;
 }
 
-
-.department img{
+/* Styling for department images */
+.department img {
     width: auto !important;
     height: 125px !important;
     object-fit: cover !important;
 }
 
-#border-form{
-    border-left: #4fb3b4 2px solid;
+/* Border styles for specific screen width using media query */
+#border-form {
+    border-left: var(--bg-main) 2px solid;
 }
+
+/* Media query for smaller screens */
 @media (max-width: 995px) {
-    #border-form{
-        border-top: #4fb3b4 2px solid;
-        border-left:none;
+    #border-form {
+        border-top: var(--bg-main) 2px solid;
+        border-left: none;
     }
+}
+
+/* Initial styles for hiding elements */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Animation to show elements after the effect */
+.aos-animate .slide-in-left {
+    opacity: 1;
+    transform: translateX(0);
 }
