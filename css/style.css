@@ -50,12 +50,12 @@ a {
 /* Styling for the header image container */
 .image-container {
   position: relative;
-  height: 420px;
+  height: 270px;
 }
 
 /* Styling for the header image */
 .header-img {
-  height: 420px;
+  height: 270px;
 }
 
 /* Overlay styles for the header image */
@@ -75,25 +75,25 @@ a {
 @keyframes borders {
   /* Keyframes for different border styles */
   0% {
-    border-bottom: var(--bg-main) solid 5px;
+    border-bottom: var(--bg-main) solid 3.5px;
   }
   25% {
-    border-bottom: var(--bg-main) solid 5px;
-    border-right: var(--bg-main) solid 5px;
+    border-bottom: var(--bg-main) solid 3.5px;
+    border-right: var(--bg-main) solid 3.5px;
   }
   50% {
-    border-bottom: var(--bg-main) solid 5px;
-    border-right: var(--bg-main) solid 5px;
-    border-left: var(--bg-main) solid 5px;
+    border-bottom: var(--bg-main) solid 3.5px;
+    border-right: var(--bg-main) solid 3.5px;
+    border-left: var(--bg-main) solid 3.5px;
   }
   75% {
-    border-bottom: var(--bg-main) solid 5px;
-    border-right: var(--bg-main) solid 5px;
-    border-left: var(--bg-main) solid 5px;
-    border-top: var(--bg-main) solid 5px;
+    border-bottom: var(--bg-main) solid 3.5px;
+    border-right: var(--bg-main) solid 3.5px;
+    border-left: var(--bg-main) solid 3.5px;
+    border-top: var(--bg-main) solid 3.5px;
   }
   100% {
-    border: var(--bg-main) solid 5px;
+    border: var(--bg-main) solid 3.5px;
   }
 }
 
@@ -180,7 +180,7 @@ a {
 /* Styling for cards and departments with borders and hover animation */
 .card,
 .department {
-  border: var(--color-primary) solid 2px;
+  border: var(--color-primary) solid 3.5px;
   transition: all 3s ease;
 }
 
