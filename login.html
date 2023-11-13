@@ -42,8 +42,10 @@
         </header>
     </div>    
         
+    <!-- Registration Conditions Section -->
     <div class="container-fluid p-5">
         <div class="row justify-content-center">
+            <!-- Conditions Text -->
             <div class="col-lg-5 col-md-10 mt-lg-0 mt-4 slide-in-left" data-aos="fade-right">
                 <div class="conditions h-100 d-flex flex-column justify-content-center align-items-md-start align-items-center text-primary-subtle text-center">
                     <h2 class="mb-4">Registration Conditions</h2>
@@ -52,80 +54,92 @@
                     <p>Condition 3: Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
+
+            <!-- Login Form Section -->
             <div class="col-lg-5 col-md-10 slide-in-left" data-aos="fade-right" id="border-form">
                 <div class="form-container pt-3 text-primary-subtle m-sm-3">
-                    <h2 class="text-center mb-4">Login Form</h2>
+                    <!-- Login Form Title -->
+                    <h2 class="text-center mb-4">sign in</h2>
+
+                    <!-- Login Form Fields -->
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
                         </div>
                         <div class="mb-3">
-                            <label for="pass" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="pass">
+                            <label for="college" class="form-label">College</label>
+                            <input type="text" class="form-control" id="college" placeholder="Enter your college">
                         </div>
                         <div class="mb-3">
-                            <label for="college" class="form-label">college</label>
-                            <input type="password" class="form-control" id="college">
+                            <label for="sittingNumber" class="form-label">sitting number</label>
+                            <input type="text" class="form-control" id="sittingNumber" placeholder="Enter your sitting number">
                         </div>
                         <div class="mb-3">
-                            <label for="academicYear" class="form-label">academic year</label>
-                            <input type="password" class="form-control" id="academicYear">
+                            <label for="academicYear" class="form-label">Select Your Academic Year:</label>
+                            <select class="form-select" id="academicYear">
+                                <option value="firstYear">First Year</option>
+                                <option value="secondYear">Second Year</option>
+                            </select>                            
                         </div>
+
+                        <!-- Subscribe Checkbox -->
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Subscribe to our newsletter</label>
                         </div>
-                        <button type="submit" class="btn bg-primary-subtle w-100">Submit</button>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn w-100 btn-outline-info-dark">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     
-<!-- footer -->
-<footer class="bg-dark-subtle text-white py-5">
-    <div class="container">
-        <div class="row justify-content-between">
-            <!-- Developer Info Column -->
-            <div class="col-md-4 mb-4 text-center">
-                <img src="icons/it_club.png" alt="Logo" class="img-fluid mb-3" style="max-width: 80px;">
-                <p class="text-secondary">&copy; Designed by IT Club - Information Technology Program</p>
-                <!-- Add social media links -->
-                <div class="social-links">
-                    <a href="#" class="text-white me-2"><i class="bi bi-facebook" id="media"></i></a>
-                    <a href="#" class="text-white me-2"><i class="bi bi-instagram" id="media"></i></a>
-                    <a href="#" class="text-white me-2"><i class="bi bi-youtube" id="media"></i></a>
-                    <a href="#" class="text-white me-2"><i class="bi bi-whatsapp" id="media"></i></a>
+    <!-- footer -->
+    <footer class="bg-dark-subtle text-white py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Developer Info Column -->
+                <div class="col-md-4 mb-4 text-center">
+                    <img src="icons/it_club.png" alt="Logo" class="img-fluid mb-3" style="max-width: 80px;">
+                    <p class="text-secondary">&copy; Designed by IT Club - Information Technology Program</p>
+                    <!-- Add social media links -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100092738074559&mibextid=ZbWKwL" class="text-white me-2"><i class="bi bi-facebook" id="media"></i></a>
+                        <a href="https://www.instagram.com/information.technology_club" class="text-white me-2"><i class="bi bi-instagram" id="media"></i></a>
+                        <a href="https://www.youtube.com/@ITClub-jw2vw" class="text-white me-2"><i class="bi bi-youtube" id="media"></i></a>
+                        <a href="https://chat.whatsapp.com/CTTKCD46siZDCNlH41kHKO" class="text-white me-2"><i class="bi bi-whatsapp" id="media"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-2 mb-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled text-capitalize">
+                        <li><a href="index.html" class="btn-link text-secondary">home</a></li>
+                        <li><a href="courses.html" class="btn-link text-secondary">courses</a></li>
+                        <li><a href="https://itclub-batu.github.io/brief/" class="btn-link text-secondary">abut us</a></li>
+                    </ul>
+                </div>
+                <!-- Latest Updates Column -->
+                <div class="col-md-4">
+                    <h5>Latest Updates</h5>
+                    <p>Stay tuned for the latest news and updates.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-inside-dark text-white" placeholder="Enter your email">
+                        </div>
+                        <button class="btn-Subscribe">Subscribe</button>
+                    </form>
                 </div>
             </div>
-            <!-- Quick Links -->
-            <div class="col-md-2 mb-4 text-center">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled text-capitalize">
-                    <li><a href="#" class="btn-link text-secondary">home</a></li>
-                    <li><a href="#" class="btn-link text-secondary">courses</a></li>
-                    <li><a href="#" class="btn-link text-secondary">abut us</a></li>
-                </ul>
-            </div>
-            <!-- Latest Updates Column -->
-            <div class="col-md-4">
-                <h5>Latest Updates</h5>
-                <p>Stay tuned for the latest news and updates.</p>
-                <form>
-                    <div class="mb-3">
-                        <input type="email" class="form-control bg-inside-dark text-white" placeholder="Enter your email">
-                    </div>
-                    <button class="btn-Subscribe">Subscribe</button>
-                </form>
-            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     
 <script src="js/popper.min.js"></script>

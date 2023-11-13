@@ -1,28 +1,28 @@
 :root {
-  /***************  root settings  **************/
-  /* background */
-  --bg-header: #dcd7d7; /* background navbar*/
-  --bg-body: #ffffff; /* background body */
-  --bg-card: #ffffff; /* background card */
-  --bg-main: #4fb3b4; /* background main color for section */
-  --bg-sub: #f6f7fb; /* transparent secondary background*/
-  --bg-btn-primary: transparent; /* background btn primary*/
-  --bg-btn-dark: #3d3d3db2; /* background btn dark*/
-  --bg-btn-secondary: transparent; /* background btn secondary*/
-  /* colors */
-  --color-white: #ffffff; /* color white for text*/
-  --color-black: #222; /* color black for text*/
-  --color-dark: #3e3e3e; /* color dark for text*/
-  --color-primary: #4d4d4d; /* color primary */
-  --color-secondary: transparent; /* color secondary */
-  /* box shadow  */
-  --box-shadow-dep: 1px 1px 18px #c3c3c3, -1px -1px 18px #fdfdfd; /* box shadow for deportment*/
-  --box-shadow-btn: 0px 0px 8px var(--color-dark); /* box shadow for button*/
-  /* size card  */
-  --width-card: 220px; /* width card deportment  */
-  --hight-card: auto-fit; /* hight card deportment  */
-  --min-hight-card: 215px; /* hight card deportment  */
-  --width-dr-content: 180px; /* width dropdown content*/
+  /***************  Root Settings  **************/
+  /* Background */
+  --navbar-background: #dcd7d7; /* Background navbar */
+  --body-background: #ffffff; /* Background body */
+  --card-background: #ffffff; /* Background card */
+  --main-background: #4fb3b4; /* Background main color for section */
+  --secondary-background: #f6f7fb; /* Transparent secondary background */
+  --primary-button-background: transparent; /* Background btn primary */
+  --dark-button-background: #3d3d3db2; /* Background btn dark */
+  --secondary-button-background: transparent; /* Background btn secondary */
+  /* Colors */
+  --text-white: #ffffff; /* Color white for text */
+  --text-black: #222; /* Color black for text */
+  --text-dark: #3e3e3e; /* Color dark for text */
+  --primary-color: #4d4d4d; /* Color primary */
+  --secondary-color: transparent; /* Color secondary */
+  /* Box Shadow  */
+  --department-box-shadow: 1px 1px 18px #c3c3c3, -1px -1px 18px #fdfdfd; /* Box shadow for department */
+  --button-box-shadow: 0px 0px 8px var(--text-dark); /* Box shadow for button */
+  /* Size Card  */
+  --department-card-width: 220px; /* Width card department  */
+  --department-card-height: auto-fit; /* Height card department  */
+  --department-card-min-height: 215px; /* Height card department  */
+  --dropdown-content-width: 180px; /* Width dropdown content */
 }
 /* Reset styles for all elements */
 * {
@@ -71,39 +71,13 @@ a {
   justify-content: center;
 }
 
-/* Animation for borders */
-@keyframes borders {
-  /* Keyframes for different border styles */
-  0% {
-    border-bottom: var(--bg-main) solid 3.5px;
-  }
-  25% {
-    border-bottom: var(--bg-main) solid 3.5px;
-    border-right: var(--bg-main) solid 3.5px;
-  }
-  50% {
-    border-bottom: var(--bg-main) solid 3.5px;
-    border-right: var(--bg-main) solid 3.5px;
-    border-left: var(--bg-main) solid 3.5px;
-  }
-  75% {
-    border-bottom: var(--bg-main) solid 3.5px;
-    border-right: var(--bg-main) solid 3.5px;
-    border-left: var(--bg-main) solid 3.5px;
-    border-top: var(--bg-main) solid 3.5px;
-  }
-  100% {
-    border: var(--bg-main) solid 3.5px;
-  }
-}
-
 /* Styles for department cards */
 .department {
-  width: var(--width-card) !important;
-  height: var(--hight-card) !important;
-  background-color: var(--bg-card) !important;
+  width: var(--department-card-width) !important;
+  height: var(--department-card-height) !important;
+  background-color: var(--card-background) !important;
   padding: 7px !important;
-  min-height: var(--min-hight-card);
+  min-height: var(--department-card-min-height);
   min-width: fit-content !important;
 }
 
@@ -115,18 +89,18 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: var(--color-white);
+  color: var(--text-white);
   padding: 0.3em 0.5em;
   font-size: 18px;
   border-radius: 0.5em;
   background: transparent;
-  border: 1px solid var(--bg-main);
+  border: 1px solid var(--main-background);
 }
 
 /* Hover state for the Subscribe button */
 .btn-Subscribe:hover {
-  color: var(--color-white);
-  border: 1px solid var(--bg-main);
+  color: var(--text-white);
+  border: 1px solid var(--main-background);
 }
 
 /* Animation for the Subscribe button:before */
@@ -156,7 +130,7 @@ a {
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: var(--bg-main);
+  background-color: var(--main-background);
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -166,48 +140,63 @@ a {
 /* Hover state for the Subscribe button:before */
 .btn-Subscribe:hover:before {
   top: -35%;
-  background-color: var(--bg-main);
+  background-color: var(--main-background);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 /* Hover state for the Subscribe button:after */
 .btn-Subscribe:hover:after {
   top: -45%;
-  background-color: var(--bg-main);
+  background-color: var(--main-background);
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 /* Styling for cards and departments with borders and hover animation */
-.card,
-.department {
-  border: var(--color-primary) solid 3.5px;
+.card {
+  border: var(--primary-color) solid 3.5px;
   transition: all 3s ease;
 }
 
 /* Hover state for cards and departments with animation */
-.card:hover,
-.department:hover {
+.card:hover{
   animation: borders 2s ease;
-}
-
-/* Styling for department images */
-.department img {
-  /* width: auto !important;
-  height: 125px !important;
-  object-fit: cover !important; */
-  width: 150px;
-  height: 150px;
 }
 
 /* Border styles for specific screen width using media query */
 #border-form {
-  border-left: var(--bg-main) 2px solid;
+  border-left: var(--main-background) 2px solid;
+}
+
+/* Animation for borders */
+@keyframes borders {
+  /* Keyframes for different border styles */
+  0% {
+    border-bottom: var(--main-background) solid 3.5px;
+  }
+  25% {
+    border-bottom: var(--main-background) solid 3.5px;
+    border-right: var(--main-background) solid 3.5px;
+  }
+  50% {
+    border-bottom: var(--main-background) solid 3.5px;
+    border-right: var(--main-background) solid 3.5px;
+    border-left: var(--main-background) solid 3.5px;
+  }
+  75% {
+    border-bottom: var(--main-background) solid 3.5px;
+    border-right: var(--main-background) solid 3.5px;
+    border-left: var(--main-background) solid 3.5px;
+    border-top: var(--main-background) solid 3.5px;
+  }
+  100% {
+    border: var(--main-background) solid 3.5px;
+  }
 }
 
 /* Media query for smaller screens */
 @media (max-width: 995px) {
   #border-form {
-    border-top: var(--bg-main) 2px solid;
+    border-top: var(--main-background) 2px solid;
     border-left: none;
   }
 }
