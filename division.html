@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>BORG AL ARAB TECHNOLOGICAL UNIVERSITY</title>
     <!-- 
         .bg-inside-dark
         .bg-dark-subtle
@@ -33,7 +34,7 @@
     <div class="container-fluid p-0">
         <header class="d-flex justify-content-start w-100">
             <div class="image-container w-100">
-                <img src="icons/college_3.jpg" alt="" class="w-100 header-img">
+                <!-- <img src="icons/college_3.jpg" alt="" class="w-100 header-img"> -->
                 <div class="overlay">
                     <div class="text-white fs-1 fw-bold text-center text-capitalize">choose your division</div>
                 </div>
@@ -44,7 +45,8 @@
     <!-- Body Section -->
     <div class="container p-5">
         <div class="d-flex justify-content-around flex-wrap gap-5">
-
+            <!-- notification -->
+            <div class="notification"></div>
             <!-- First Division -->
             <div class="mb-3 text-center slide-in-left" data-aos="fade-right">
                 <!-- New Card -->
@@ -115,7 +117,7 @@
                         <div class="mb-3">
                             <input type="email" class="form-control bg-inside-dark text-white" placeholder="Enter your email">
                         </div>
-                        <button class="btn-Subscribe">Subscribe</button>
+                        <button class="btn-Subscribe btn-incomplete" onclick="showAlert()">Subscribe</button>
                     </form>
                 </div>
             </div>

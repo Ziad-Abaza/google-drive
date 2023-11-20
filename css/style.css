@@ -50,13 +50,13 @@ a {
 /* Styling for the header image container */
 .image-container {
   position: relative;
-  height: 270px;
+  height: 170px;
 }
 
 /* Styling for the header image */
-.header-img {
+/* .header-img {
   height: 270px;
-}
+} */
 
 /* Overlay styles for the header image */
 .overlay {

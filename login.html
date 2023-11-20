@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
+    <title>BORG AL ARAB TECHNOLOGICAL UNIVERSITY</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -34,7 +34,7 @@
     <div class="container-fluid p-0">
         <header class="d-flex justify-content-start w-100">
             <div class="image-container w-100">
-                <img src="icons/college_3.jpg" alt="" class="w-100 header-img">
+                <!-- <img src="icons/college_3.jpg" alt="" class="w-100 header-img"> -->
                 <div class="overlay">
                     <div class="text-white fs-1 fw-bold text-center text-capitalize">courses</div>
                 </div>
@@ -60,9 +60,10 @@
                 <div class="form-container pt-3 text-primary-subtle m-sm-3">
                     <!-- Login Form Title -->
                     <h2 class="text-center mb-4">sign in</h2>
-
+                    <!-- notification -->
+                    <div class="notification"></div>
                     <!-- Login Form Fields -->
-                    <form>
+                    <form action="#">
                         <div class="mb-3">
                             <label for="name" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your name">
@@ -94,7 +95,7 @@
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" class="btn w-100 btn-outline-info-dark">Submit</button>
+                        <button type="submit" class="btn w-100 btn-outline-info-dark btn-incomplete" onclick="showAlert()">Submit</button>
                     </form>
                 </div>
             </div>
@@ -134,7 +135,7 @@
                         <div class="mb-3">
                             <input type="email" class="form-control bg-inside-dark text-white" placeholder="Enter your email">
                         </div>
-                        <button class="btn-Subscribe">Subscribe</button>
+                        <button class="btn-Subscribe btn-incomplete" onclick="showAlert()">Subscribe</button>
                     </form>
                 </div>
             </div>
